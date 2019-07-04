@@ -1,0 +1,6 @@
+<h1>User Form:</h1>
+<%= form_for @user do |f|%>
+Name: <%= f.text_field :name %><br>
+Allergic to: <%=f.collection_check_boxes :ingredient_id, Ingredient.all, :id, :name%>
+<%= f.submit %>
+<% end %>

@@ -1,0 +1,7 @@
+<h1><%= @ingredient.name%></h1><br><br>
+<h2>list of users allergic to:</h2>
+<ol>
+    <%@ingredient.users.each do |user|%>
+    <li><%= user.name%></li>
+    <%end%>
+</ol>

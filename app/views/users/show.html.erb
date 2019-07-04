@@ -1,0 +1,7 @@
+<%=@user.name%>
+<%@recipes.each do |recipe|%>
+<%=recipe.name%>
+<%end%>
+
+
+<%= link_to "Delete", @user, method: :delete%>
